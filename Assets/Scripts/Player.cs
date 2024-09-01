@@ -8,6 +8,13 @@ public class Player : MonoBehaviour
     [SerializeField] float moveSpeed = 5;
     float rawInput;
 
+    Shooter shooter;
+
+    void Awake()
+    {
+        shooter = GetComponent<Shooter>();
+    }
+
     void Update()
     {
       Move();  
@@ -22,5 +29,13 @@ public class Player : MonoBehaviour
     {
         rawInput = value.Get<float>();
         Debug.Log(rawInput);
+    }
+
+    void OnFire(InputValue value)
+    {
+        if(shooter != null)
+        {
+            shooter.isFiring = value.isPressed;
+        }
     }
 }

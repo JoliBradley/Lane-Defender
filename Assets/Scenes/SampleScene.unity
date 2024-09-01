@@ -1776,6 +1776,23 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 50
+--- !u!114 &1643827598
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1643827583}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ef5794017cf6965408791b4f6c880838, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  projectilePrefab: {fileID: 0}
+  projectileSpeed: 10
+  projectilelifetime: 5
+  firingRate: 0.2
+  isFiring: 0
 --- !u!1 &1835715574
 GameObject:
   m_ObjectHideFlags: 0
@@ -7356,6 +7373,10 @@ PrefabInstance:
       propertyPath: m_FlipX
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1017400825663587463, guid: b6a0c3b6ec144c14e9993710e3c05c48, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3665713827850001593, guid: b6a0c3b6ec144c14e9993710e3c05c48, type: 3}
       propertyPath: m_Name
       value: Player
@@ -7417,6 +7438,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 3665713827850001593, guid: b6a0c3b6ec144c14e9993710e3c05c48, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1643827597}
+    - targetCorrespondingSourceObject: {fileID: 3665713827850001593, guid: b6a0c3b6ec144c14e9993710e3c05c48, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1643827598}
   m_SourcePrefab: {fileID: 100100000, guid: b6a0c3b6ec144c14e9993710e3c05c48, type: 3}
 --- !u!1 &2139820597
 GameObject:
