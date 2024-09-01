@@ -8,7 +8,6 @@ public class Player : MonoBehaviour
     [SerializeField] float moveSpeed = 5;
     float rawInput;
 
-
     void Update()
     {
       Move();  
